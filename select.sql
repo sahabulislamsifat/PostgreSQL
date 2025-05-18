@@ -77,4 +77,29 @@
 -- SELECT * FROM users WHERE email is NOT NULL;
 
 -- SELECT COALESCE(first_name, last_name) as "FullName", * FROM users;
-SELECT COALESCE(email, 'Email not provided') as "Email", * FROM users;
+-- SELECT COALESCE(email, 'Email not provided') as "Email", * FROM users;
+
+-- SELECT * FROM users WHERE country= 'Bangladesh' AND city = 'Dhaka';
+-- SELECT * FROM users WHERE country IN ('Bangladesh', 'India', 'Pakistan');
+-- SELECT * FROM users WHERE country NOT IN ('Bangladesh', 'India', 'Pakistan');
+
+-- SELECT * FROM users WHERE country IN ('Bangladesh', 'India', 'Pakistan') AND city IN ('Dhaka', 'Kolkata');
+
+-- SELECT * FROM users WHERE dob BETWEEN '2001-01-01' AND '2025-05-18';
+-- SELECT * FROM users
+-- WHERE first_name LIKE 'Sahabul%';
+-- SELECT * FROM users
+-- WHERE first_name LIKE '%Sahabul';
+-- SELECT * FROM users
+-- WHERE first_name LIKE '__ul';
+-- SELECT * FROM users
+-- WHERE first_name LIKE '__ul__';
+
+
+-- SELECT * FROM users
+-- LIMIT 5 OFFSET 5 * 2;
+
+SELECT * FROM users WHERE country = 'Bangladesh' ;
+
+-- DELETE FROM users WHERE user_id = 1;
+-- DELETE FROM users WHERE user_id = 'Rangpur';
