@@ -60,4 +60,21 @@
 
 
 -- SELECT upper(first_name) FROM users;
-SELECT upper(first_name) * FROM users;
+-- SELECT upper(first_name), * FROM users;
+-- SELECT upper(first_name) as first_name_in_upper_case, * FROM users;
+-- SELECT concat(first_name, ' ', last_name) as full_name FROM users;
+-- SELECT length(first_name) FROM users;
+
+-- SELECT avg(age) FROM users;
+-- SELECT min(age) FROM users;
+-- SELECT max(age) FROM users;
+-- SELECT count(*) FROM users;
+-- SELECT sum(age) FROM users;
+
+-- SELECT max(length(first_name)) FROM users;
+
+-- SELECT * FROM users WHERE email is NULL;
+-- SELECT * FROM users WHERE email is NOT NULL;
+
+-- SELECT COALESCE(first_name, last_name) as "FullName", * FROM users;
+SELECT COALESCE(email, 'Email not provided') as "Email", * FROM users;
