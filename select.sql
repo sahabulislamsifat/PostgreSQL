@@ -50,4 +50,14 @@
 
 -- SELECT * FROM users WHERE country = 'Bangladesh';
 -- SELECT * FROM users WHERE country = 'Bangladesh' AND city = 'Dhaka';
-SELECT * FROM users WHERE (country = 'Bangladesh' OR city = 'Dhaka') AND age > 20;
+-- SELECT * FROM users WHERE (country = 'Bangladesh' OR city = 'Dhaka') AND age > 20;
+-- SELECT * FROM users age > 20;
+-- SELECT * FROM users WHERE city = 'Dhaka' AND age > 20;
+-- SELECT * FROM users WHERE city = 'Dhaka' AND age < 20;
+-- SELECT * FROM users WHERE city = 'Dhaka' AND age <= 20;
+-- SELECT * FROM users WHERE age <= 20;
+-- SELECT * FROM users WHERE age <> 20;
+
+
+-- SELECT upper(first_name) FROM users;
+SELECT upper(first_name) * FROM users;
