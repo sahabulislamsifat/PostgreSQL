@@ -37,4 +37,17 @@
 -- SELECT email FROM users;
 -- SELECT email, age FROM users;
 -- SELECT email as "users_email", age FROM users;
-SELECT * FROM users ORDER BY first_name ASC
+-- SELECT * FROM users ORDER BY first_name ASC;
+-- SELECT * FROM users ORDER BY first_name DESC;
+-- SELECT * FROM users ORDER BY first_name ASC, last_name DESC;
+
+-- SELECT * FROM users ORDER BY dob DESC;
+-- SELECT * FROM users ORDER BY dob ASC;
+
+-- SELECT country FROM users ORDER BY country ASC;
+-- SELECT DISTINCT country FROM users;
+-- SELECT DISTINCT blood_group FROM users;
+
+-- SELECT * FROM users WHERE country = 'Bangladesh';
+-- SELECT * FROM users WHERE country = 'Bangladesh' AND city = 'Dhaka';
+SELECT * FROM users WHERE (country = 'Bangladesh' OR city = 'Dhaka') AND age > 20;
