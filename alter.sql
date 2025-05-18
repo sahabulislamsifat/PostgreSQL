@@ -23,5 +23,28 @@
 -- ADD COLUMN department VARCHAR(50) NOT NULL DEFAULT 'General Studies';
 
 -- INSERT INTO students VALUES (016, "Tunam", 27, "Rangpur,Bangladesh","Social Work");
-INSERT INTO students (id, name, age, address) VALUES (020, 'Tariq', 28, 'Dhaka,Bangladesh');
+-- INSERT INTO students (id, name, age, address) VALUES (021, 'Tariq', 28, 'Dhaka,Bangladesh');
 -- INSERT INTO students (id, name, age, address, department) VALUES (018, 'Sajul', 27, 'Rangpur,Bangladesh', 'Botany');
+
+-- ALTER Table students DROP COLUMN department;
+-- ALTER TABLE students RENAME COLUMN address TO location;
+-- ALTER Table students
+-- alter COLUMN location type VARCHAR(200);
+
+
+-- ALTER TABLE students
+--     ALTER COLUMN age SET NOT NULL;
+-- ALTER TABLE students
+--     ALTER COLUMN age DROP NOT NULL;
+
+    -- ALTER COLUMN age TYPE INTEGER,
+    -- ALTER COLUMN age DROP DEFAULT,
+    -- ALTER COLUMN age SET DEFAULT 18;
+
+    -- ALTER TABLE students
+    -- ADD constraint student_age_unique UNIQUE (age);
+
+    -- ALTER TABLE students
+    -- DROP constraint student_age_unique;
+--    DROP ALTER TABLE students;
+--    TRUNCATE ALTER TABLE students;
