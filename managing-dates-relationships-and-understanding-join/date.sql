@@ -53,3 +53,4 @@
 -- SELECT extract(MONTH FROM '2023-10-01 12:00:00'::timestamp);
 
 -- SELECT date_part('month', '2023-10-01 12:00:00'::timestamp) AS month,
+SELECT * FROM users WHERE date_part('month', dob) = 10;
